@@ -6,11 +6,12 @@ import java.util.List;
 
 public class AmazonInterview {
 	public static void main(String[] args) {
-		int arr[] = {8,4,2,12};
+		int arr[] = { 1,2,5,10,35,89};
 		LinkedList<Integer> list = new LinkedList<>();
 		for (int i = 0; i < arr.length; i++) {
 			list.add(arr[i]);
 		}
+		Collections.sort(list);
 		findMinValues(list);
 	}
 
@@ -24,9 +25,9 @@ public class AmazonInterview {
 			return 0;
 		}
 		else {
-			Collections.sort(list,Collections.reverseOrder());
-			int a=list.remove(list.size()-1);
-			int b=list.remove(list.size()-1);
+			Collections.sort(list);
+			int a=list.remove(0);
+			int b=list.remove(0);
 			int sum=a+b;
 			list.add(sum);
 			return sum+findMin(list);
