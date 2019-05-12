@@ -17,7 +17,10 @@ public class Find_Max_Each_row {
 	}
 
 	public static void main(String[] args) {
-		int arr[][] = { { 3, 4, 1, 8 }, { 1, 4, 9, 11 }, { 76, 34, 21, 1 }, { 2, 1, 4, 5 } };
+		int arr[][] = { { 3, 4, 1, 8 }, 
+				{ 1, 4, 9, 11 },
+				{ 76, 34, 21, 1 }, 
+				{ 2, 1, 4, 5 } };
 		process_values(arr);
 	}
 }
