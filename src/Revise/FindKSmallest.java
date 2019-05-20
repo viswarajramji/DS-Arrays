@@ -2,8 +2,8 @@ package Revise;
 
 public class FindKSmallest {
 	public static void main(String[] args) {
-		int arr[] = {4, 2, 6, 1, 5};
-		int k = 3;
+		int arr[] = {5,6,1,2,3};
+		int k = 4;
 		for (int i = k; i < arr.length; i++) {
 			int max_val = arr[k - 1];
 			int pos = k - 1;
