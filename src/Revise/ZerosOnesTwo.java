@@ -15,7 +15,6 @@ public class ZerosOnesTwo {
 				low++;
 				mid++;
 				break;
-
 			case 1:
 				mid++;
 				break;
